@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280075AA16B30FE100BD2533 /* color-badminton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2800759616B30FE100BD2533 /* color-badminton.png */; };
+		280075AB16B30FE100BD2533 /* color-badminton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2800759716B30FE100BD2533 /* color-badminton@2x.png */; };
+		280075AC16B30FE100BD2533 /* color-baseball.png in Resources */ = {isa = PBXBuildFile; fileRef = 2800759816B30FE100BD2533 /* color-baseball.png */; };
+		280075AD16B30FE100BD2533 /* color-baseball@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2800759916B30FE100BD2533 /* color-baseball@2x.png */; };
+		280075AE16B30FE100BD2533 /* color-basketball.png in Resources */ = {isa = PBXBuildFile; fileRef = 2800759A16B30FE100BD2533 /* color-basketball.png */; };
+		280075AF16B30FE100BD2533 /* color-basketball@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2800759B16B30FE100BD2533 /* color-basketball@2x.png */; };
+		280075B016B30FE100BD2533 /* color-fitness.png in Resources */ = {isa = PBXBuildFile; fileRef = 2800759C16B30FE100BD2533 /* color-fitness.png */; };
+		280075B116B30FE100BD2533 /* color-fitness@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2800759D16B30FE100BD2533 /* color-fitness@2x.png */; };
+		280075B216B30FE100BD2533 /* color-football.png in Resources */ = {isa = PBXBuildFile; fileRef = 2800759E16B30FE100BD2533 /* color-football.png */; };
+		280075B316B30FE100BD2533 /* color-football@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2800759F16B30FE100BD2533 /* color-football@2x.png */; };
+		280075B416B30FE100BD2533 /* color-golf.png in Resources */ = {isa = PBXBuildFile; fileRef = 280075A016B30FE100BD2533 /* color-golf.png */; };
+		280075B516B30FE100BD2533 /* color-golf@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 280075A116B30FE100BD2533 /* color-golf@2x.png */; };
+		280075B616B30FE100BD2533 /* color-hockey.png in Resources */ = {isa = PBXBuildFile; fileRef = 280075A216B30FE100BD2533 /* color-hockey.png */; };
+		280075B716B30FE100BD2533 /* color-hockey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 280075A316B30FE100BD2533 /* color-hockey@2x.png */; };
+		280075B816B30FE100BD2533 /* color-soccer.png in Resources */ = {isa = PBXBuildFile; fileRef = 280075A416B30FE100BD2533 /* color-soccer.png */; };
+		280075B916B30FE100BD2533 /* color-soccer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 280075A516B30FE100BD2533 /* color-soccer@2x.png */; };
+		280075BA16B30FE100BD2533 /* color-tennis.png in Resources */ = {isa = PBXBuildFile; fileRef = 280075A616B30FE100BD2533 /* color-tennis.png */; };
+		280075BB16B30FE100BD2533 /* color-tennis@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 280075A716B30FE100BD2533 /* color-tennis@2x.png */; };
+		280075BC16B30FE100BD2533 /* color-yoga.png in Resources */ = {isa = PBXBuildFile; fileRef = 280075A816B30FE100BD2533 /* color-yoga.png */; };
+		280075BD16B30FE100BD2533 /* color-yoga@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 280075A916B30FE100BD2533 /* color-yoga@2x.png */; };
 		281B96EE16B1B72700074631 /* GCCardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 281B96ED16B1B72700074631 /* GCCardCollectionViewCell.m */; };
 		281B96F116B1B78600074631 /* GCCardCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 281B96F016B1B78600074631 /* GCCardCollectionHeaderView.m */; };
 		281B96F416B1B79900074631 /* GCCardCollectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 281B96F316B1B79900074631 /* GCCardCollectionFooterView.m */; };
@@ -26,6 +46,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2800759616B30FE100BD2533 /* color-badminton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-badminton.png"; sourceTree = "<group>"; };
+		2800759716B30FE100BD2533 /* color-badminton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-badminton@2x.png"; sourceTree = "<group>"; };
+		2800759816B30FE100BD2533 /* color-baseball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-baseball.png"; sourceTree = "<group>"; };
+		2800759916B30FE100BD2533 /* color-baseball@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-baseball@2x.png"; sourceTree = "<group>"; };
+		2800759A16B30FE100BD2533 /* color-basketball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-basketball.png"; sourceTree = "<group>"; };
+		2800759B16B30FE100BD2533 /* color-basketball@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-basketball@2x.png"; sourceTree = "<group>"; };
+		2800759C16B30FE100BD2533 /* color-fitness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-fitness.png"; sourceTree = "<group>"; };
+		2800759D16B30FE100BD2533 /* color-fitness@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-fitness@2x.png"; sourceTree = "<group>"; };
+		2800759E16B30FE100BD2533 /* color-football.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-football.png"; sourceTree = "<group>"; };
+		2800759F16B30FE100BD2533 /* color-football@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-football@2x.png"; sourceTree = "<group>"; };
+		280075A016B30FE100BD2533 /* color-golf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-golf.png"; sourceTree = "<group>"; };
+		280075A116B30FE100BD2533 /* color-golf@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-golf@2x.png"; sourceTree = "<group>"; };
+		280075A216B30FE100BD2533 /* color-hockey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-hockey.png"; sourceTree = "<group>"; };
+		280075A316B30FE100BD2533 /* color-hockey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-hockey@2x.png"; sourceTree = "<group>"; };
+		280075A416B30FE100BD2533 /* color-soccer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-soccer.png"; sourceTree = "<group>"; };
+		280075A516B30FE100BD2533 /* color-soccer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-soccer@2x.png"; sourceTree = "<group>"; };
+		280075A616B30FE100BD2533 /* color-tennis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-tennis.png"; sourceTree = "<group>"; };
+		280075A716B30FE100BD2533 /* color-tennis@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-tennis@2x.png"; sourceTree = "<group>"; };
+		280075A816B30FE100BD2533 /* color-yoga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-yoga.png"; sourceTree = "<group>"; };
+		280075A916B30FE100BD2533 /* color-yoga@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-yoga@2x.png"; sourceTree = "<group>"; };
 		281B96EC16B1B72700074631 /* GCCardCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCCardCollectionViewCell.h; sourceTree = "<group>"; };
 		281B96ED16B1B72700074631 /* GCCardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCCardCollectionViewCell.m; sourceTree = "<group>"; };
 		281B96EF16B1B78600074631 /* GCCardCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCCardCollectionHeaderView.h; sourceTree = "<group>"; };
@@ -132,6 +172,26 @@
 		285E5FB216B0EE3A0080A81C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2800759616B30FE100BD2533 /* color-badminton.png */,
+				2800759716B30FE100BD2533 /* color-badminton@2x.png */,
+				2800759816B30FE100BD2533 /* color-baseball.png */,
+				2800759916B30FE100BD2533 /* color-baseball@2x.png */,
+				2800759A16B30FE100BD2533 /* color-basketball.png */,
+				2800759B16B30FE100BD2533 /* color-basketball@2x.png */,
+				2800759C16B30FE100BD2533 /* color-fitness.png */,
+				2800759D16B30FE100BD2533 /* color-fitness@2x.png */,
+				2800759E16B30FE100BD2533 /* color-football.png */,
+				2800759F16B30FE100BD2533 /* color-football@2x.png */,
+				280075A016B30FE100BD2533 /* color-golf.png */,
+				280075A116B30FE100BD2533 /* color-golf@2x.png */,
+				280075A216B30FE100BD2533 /* color-hockey.png */,
+				280075A316B30FE100BD2533 /* color-hockey@2x.png */,
+				280075A416B30FE100BD2533 /* color-soccer.png */,
+				280075A516B30FE100BD2533 /* color-soccer@2x.png */,
+				280075A616B30FE100BD2533 /* color-tennis.png */,
+				280075A716B30FE100BD2533 /* color-tennis@2x.png */,
+				280075A816B30FE100BD2533 /* color-yoga.png */,
+				280075A916B30FE100BD2533 /* color-yoga@2x.png */,
 				285E5FB316B0EE3A0080A81C /* Default-568h@2x.png */,
 				285E5FB416B0EE3A0080A81C /* Default.png */,
 				285E5FB516B0EE3A0080A81C /* Default@2x.png */,
@@ -231,6 +291,26 @@
 				285E5FB916B0EE3A0080A81C /* Default-568h@2x.png in Resources */,
 				285E5FBA16B0EE3A0080A81C /* Default.png in Resources */,
 				285E5FBB16B0EE3A0080A81C /* Default@2x.png in Resources */,
+				280075AA16B30FE100BD2533 /* color-badminton.png in Resources */,
+				280075AB16B30FE100BD2533 /* color-badminton@2x.png in Resources */,
+				280075AC16B30FE100BD2533 /* color-baseball.png in Resources */,
+				280075AD16B30FE100BD2533 /* color-baseball@2x.png in Resources */,
+				280075AE16B30FE100BD2533 /* color-basketball.png in Resources */,
+				280075AF16B30FE100BD2533 /* color-basketball@2x.png in Resources */,
+				280075B016B30FE100BD2533 /* color-fitness.png in Resources */,
+				280075B116B30FE100BD2533 /* color-fitness@2x.png in Resources */,
+				280075B216B30FE100BD2533 /* color-football.png in Resources */,
+				280075B316B30FE100BD2533 /* color-football@2x.png in Resources */,
+				280075B416B30FE100BD2533 /* color-golf.png in Resources */,
+				280075B516B30FE100BD2533 /* color-golf@2x.png in Resources */,
+				280075B616B30FE100BD2533 /* color-hockey.png in Resources */,
+				280075B716B30FE100BD2533 /* color-hockey@2x.png in Resources */,
+				280075B816B30FE100BD2533 /* color-soccer.png in Resources */,
+				280075B916B30FE100BD2533 /* color-soccer@2x.png in Resources */,
+				280075BA16B30FE100BD2533 /* color-tennis.png in Resources */,
+				280075BB16B30FE100BD2533 /* color-tennis@2x.png in Resources */,
+				280075BC16B30FE100BD2533 /* color-yoga.png in Resources */,
+				280075BD16B30FE100BD2533 /* color-yoga@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

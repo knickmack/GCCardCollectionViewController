@@ -19,4 +19,18 @@
     return color;
 }
 
++ (UIColor *)randomTexture {
+    NSArray *names = @[ @"badminton", @"baseball", @"basketball", @"fitness", @"football", @"golf", @"hockey", @"soccer", @"tennis", @"yoga" ];
+    NSMutableArray *textures = [@[] mutableCopy];
+    
+    for (NSString *name in names) {
+        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"color-%@", name]];
+        UIColor *color = [UIColor colorWithPatternImage:image];
+        
+        [textures addObject:color];
+    }
+    
+    return [textures objectAtIndex:arc4random_uniform(textures.count)];
+}
+
 @end
