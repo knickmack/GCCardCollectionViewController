@@ -23,6 +23,7 @@
 		285E5FBB16B0EE3A0080A81C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 285E5FB516B0EE3A0080A81C /* Default@2x.png */; };
 		285E5FD316B10A1F0080A81C /* GCCardCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 285E5FD216B10A1F0080A81C /* GCCardCollectionViewController.m */; };
 		2877DDF016B2D0B50063C0DF /* GCCardCollectionViewDetailFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2877DDEF16B2D0B50063C0DF /* GCCardCollectionViewDetailFlowLayout.m */; };
+		28DDD45816B3512A00D5F36A /* GCCardCollectionViewPlainFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DDD45716B3512A00D5F36A /* GCCardCollectionViewPlainFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,8 @@
 		285E5FD216B10A1F0080A81C /* GCCardCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCCardCollectionViewController.m; sourceTree = "<group>"; };
 		2877DDEE16B2D0B50063C0DF /* GCCardCollectionViewDetailFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCCardCollectionViewDetailFlowLayout.h; sourceTree = "<group>"; };
 		2877DDEF16B2D0B50063C0DF /* GCCardCollectionViewDetailFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCCardCollectionViewDetailFlowLayout.m; sourceTree = "<group>"; };
+		28DDD45616B3512A00D5F36A /* GCCardCollectionViewPlainFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCCardCollectionViewPlainFlowLayout.h; path = ../../../ios/GCCardCollectionViewController/GCCardCollectionViewController/GCCardCollectionViewPlainFlowLayout.h; sourceTree = "<group>"; };
+		28DDD45716B3512A00D5F36A /* GCCardCollectionViewPlainFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCCardCollectionViewPlainFlowLayout.m; path = ../../../ios/GCCardCollectionViewController/GCCardCollectionViewController/GCCardCollectionViewPlainFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +173,8 @@
 				285E5FD216B10A1F0080A81C /* GCCardCollectionViewController.m */,
 				2877DDEE16B2D0B50063C0DF /* GCCardCollectionViewDetailFlowLayout.h */,
 				2877DDEF16B2D0B50063C0DF /* GCCardCollectionViewDetailFlowLayout.m */,
+				28DDD45616B3512A00D5F36A /* GCCardCollectionViewPlainFlowLayout.h */,
+				28DDD45716B3512A00D5F36A /* GCCardCollectionViewPlainFlowLayout.m */,
 				282D910616B292510017CAEE /* GCCardCollectionViewSelectedFlowLayout.h */,
 				282D910716B292510017CAEE /* GCCardCollectionViewSelectedFlowLayout.m */,
 			);
@@ -251,6 +256,7 @@
 				2843F8EE16B2175400C6CF7B /* UIColor+Random.m in Sources */,
 				282D910816B292510017CAEE /* GCCardCollectionViewSelectedFlowLayout.m in Sources */,
 				2877DDF016B2D0B50063C0DF /* GCCardCollectionViewDetailFlowLayout.m in Sources */,
+				28DDD45816B3512A00D5F36A /* GCCardCollectionViewPlainFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

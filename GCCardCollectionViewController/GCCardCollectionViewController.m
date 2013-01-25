@@ -7,6 +7,7 @@
 //
 
 #import "GCCardCollectionViewController.h"
+#import "GCCardCollectionViewPlainFlowLayout.h"
 #import "GCCardCollectionViewSelectedFlowLayout.h"
 #import "GCCardCollectionViewDetailFlowLayout.h"
 #import "GCCardCollectionHeaderView.h"
@@ -19,7 +20,7 @@ static NSString * const GCCardCollectionFooterViewIdentifier = @"Footer";
 
 @interface GCCardCollectionViewController ()
 
-@property (strong, nonatomic, readonly) UICollectionViewFlowLayout *cardCollectionViewPlainFlowLayout;
+@property (strong, nonatomic, readonly) GCCardCollectionViewPlainFlowLayout *cardCollectionViewPlainFlowLayout;
 @property (strong, nonatomic, readonly) GCCardCollectionViewSelectedFlowLayout *cardCollectionViewSelectedFlowLayout;
 @property (strong, nonatomic, readonly) GCCardCollectionViewDetailFlowLayout *cardCollectionViewDetailFlowLayout;
 
@@ -92,11 +93,7 @@ static NSString * const GCCardCollectionFooterViewIdentifier = @"Footer";
 #pragma mark - NSObject
 
 - (id)init {
-    _cardCollectionViewPlainFlowLayout = [UICollectionViewFlowLayout new];
-    
-    _cardCollectionViewPlainFlowLayout.headerReferenceSize = CGSizeMake(300.f, 30.f);
-    _cardCollectionViewPlainFlowLayout.itemSize = CGSizeMake(300.f, 64.f);
-    _cardCollectionViewPlainFlowLayout.sectionInset = UIEdgeInsetsMake(10.f, 10.f, 10.f, 10.f);
+    _cardCollectionViewPlainFlowLayout = [GCCardCollectionViewPlainFlowLayout new];
     
     self = [super initWithCollectionViewLayout:_cardCollectionViewPlainFlowLayout];
     if (!self) {
