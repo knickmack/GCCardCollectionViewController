@@ -95,7 +95,7 @@ static NSString * const GCCardCollectionFooterViewIdentifier = @"Footer";
     _cardCollectionViewPlainFlowLayout = [UICollectionViewFlowLayout new];
     
     _cardCollectionViewPlainFlowLayout.headerReferenceSize = CGSizeMake(300.f, 30.f);
-    _cardCollectionViewPlainFlowLayout.itemSize = CGSizeMake(300.f, 46.f);
+    _cardCollectionViewPlainFlowLayout.itemSize = CGSizeMake(300.f, 64.f);
     _cardCollectionViewPlainFlowLayout.sectionInset = UIEdgeInsetsMake(10.f, 10.f, 10.f, 10.f);
     
     self = [super initWithCollectionViewLayout:_cardCollectionViewPlainFlowLayout];
