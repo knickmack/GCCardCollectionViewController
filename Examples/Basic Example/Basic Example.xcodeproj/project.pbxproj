@@ -48,6 +48,8 @@
 		28DDD42916B3173A00D5F36A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DDD42816B3173A00D5F36A /* QuartzCore.framework */; };
 		28DDD42C16B31CAA00D5F36A /* color-wood.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DDD42A16B31CAA00D5F36A /* color-wood.png */; };
 		28DDD42D16B31CAA00D5F36A /* color-wood@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DDD42B16B31CAA00D5F36A /* color-wood@2x.png */; };
+		28DDD43016B325DE00D5F36A /* color-carbon.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DDD42E16B325DE00D5F36A /* color-carbon.png */; };
+		28DDD43116B325DE00D5F36A /* color-carbon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DDD42F16B325DE00D5F36A /* color-carbon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +106,8 @@
 		28DDD42816B3173A00D5F36A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		28DDD42A16B31CAA00D5F36A /* color-wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-wood.png"; sourceTree = "<group>"; };
 		28DDD42B16B31CAA00D5F36A /* color-wood@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-wood@2x.png"; sourceTree = "<group>"; };
+		28DDD42E16B325DE00D5F36A /* color-carbon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-carbon.png"; sourceTree = "<group>"; };
+		28DDD42F16B325DE00D5F36A /* color-carbon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-carbon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +196,8 @@
 				2800759916B30FE100BD2533 /* color-baseball@2x.png */,
 				2800759A16B30FE100BD2533 /* color-basketball.png */,
 				2800759B16B30FE100BD2533 /* color-basketball@2x.png */,
+				28DDD42E16B325DE00D5F36A /* color-carbon.png */,
+				28DDD42F16B325DE00D5F36A /* color-carbon@2x.png */,
 				2800759C16B30FE100BD2533 /* color-fitness.png */,
 				2800759D16B30FE100BD2533 /* color-fitness@2x.png */,
 				2800759E16B30FE100BD2533 /* color-football.png */,
@@ -331,6 +337,8 @@
 				28DDD42616B3153000D5F36A /* background-section-header@2x.png in Resources */,
 				28DDD42C16B31CAA00D5F36A /* color-wood.png in Resources */,
 				28DDD42D16B31CAA00D5F36A /* color-wood@2x.png in Resources */,
+				28DDD43016B325DE00D5F36A /* color-carbon.png in Resources */,
+				28DDD43116B325DE00D5F36A /* color-carbon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

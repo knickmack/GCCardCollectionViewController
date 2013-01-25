@@ -10,6 +10,7 @@
 
 @interface UIColor (BasicExample)
 
++ (UIColor *)carbonColor;
 + (UIColor *)randomColor;
 + (UIColor *)randomTexture;
 + (UIColor *)woodColor;
