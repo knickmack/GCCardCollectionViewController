@@ -23,6 +23,11 @@
         view.layer.contents = (id)[UIImage imageNamed:@"background-section-header"].CGImage;
         view.layer.contentsGravity = kCAGravityLeft;
         view.layer.contentsScale = [UIScreen mainScreen].scale;
+    } else {
+        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+        
+        tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+        [view addSubview:tableView];
     }
     
     return view;
