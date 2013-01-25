@@ -10,6 +10,26 @@
 
 @implementation GCCardCollectionViewPlainFlowLayout
 
+#pragma mark - UICollectionViewFlowLayout
+
+- (CGSize)collectionViewContentSize {
+    CGSize collectionViewContentSize = [super collectionViewContentSize];
+    
+    collectionViewContentSize.height += 10.f;
+    
+    return collectionViewContentSize;
+}
+
+- (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect {
+    NSArray *attributes = [super layoutAttributesForElementsInRect:rect];
+    
+    for (UICollectionViewLayoutAttributes *attribute in attributes) {
+        attribute.frame = CGRectOffset(attribute.frame, 0.f, 10.f);
+    }
+    
+    return attributes;
+}
+
 #pragma mark - NSObject
 
 - (id)init {
