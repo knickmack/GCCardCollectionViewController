@@ -20,7 +20,7 @@
     UICollectionViewLayoutAttributes *attributes = [super layoutAttributesForSupplementaryViewOfKind:kind atIndexPath:indexPath];
     CGRect frame = attributes.frame;
     
-    frame.origin = CGPointZero;
+    frame.origin = CGPointMake(0.f, 10.f);
     attributes.frame = frame;
     
     return attributes;
@@ -30,7 +30,7 @@
     UICollectionViewLayoutAttributes *attributes = [super layoutAttributesForItemAtIndexPath:indexPath];
     CGRect frame = attributes.frame;
     
-    frame.origin = CGPointMake(self.sectionInset.left, self.headerReferenceSize.height + self.minimumLineSpacing);
+    frame.origin = CGPointMake(self.sectionInset.left, self.sectionInset.top + self.headerReferenceSize.height + self.minimumLineSpacing);
     attributes.frame = frame;
     
     return attributes;
@@ -43,9 +43,9 @@
         CGRect frame = attribute.frame;
         
         if (attribute.representedElementCategory == UICollectionElementCategorySupplementaryView) {
-                frame.origin = CGPointZero;
+                frame.origin = CGPointMake(0.f, 10.f);
         } else {
-            frame.origin = CGPointMake(self.sectionInset.left, self.headerReferenceSize.height + self.minimumLineSpacing);
+            frame.origin = CGPointMake(self.sectionInset.left, self.sectionInset.top + self.headerReferenceSize.height + self.minimumLineSpacing);
         }
         
         attribute.frame = frame;
