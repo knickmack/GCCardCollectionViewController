@@ -1,5 +1,5 @@
 //
-//  CardCollectionViewController.h
+//  GamesViewController.h
 //  Basic Example
 //
 //  Created by Nik Macintosh on 2013-01-24.
@@ -8,6 +8,6 @@
 
 #import "GCCardCollectionViewController.h"
 
-@interface CardCollectionViewController : GCCardCollectionViewController
+@interface GamesViewController : GCCardCollectionViewController
 
 @end

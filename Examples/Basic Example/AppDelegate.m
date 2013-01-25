@@ -7,11 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#import "CardCollectionViewController.h"
+#import "GamesViewController.h"
 
 @interface AppDelegate ()
 
-@property (strong, nonatomic, readonly) CardCollectionViewController *collectionViewController;
+@property (strong, nonatomic, readonly) GamesViewController *collectionViewController;
 @property (strong, nonatomic, readonly) UINavigationController *navigationController;
 
 @end
@@ -33,9 +33,9 @@
     return _window;
 }
 
-- (CardCollectionViewController *)collectionViewController {
+- (GamesViewController *)collectionViewController {
     if (!_collectionViewController) {
-        _collectionViewController = [CardCollectionViewController new];
+        _collectionViewController = [GamesViewController new];
     }
     
     return _collectionViewController;
