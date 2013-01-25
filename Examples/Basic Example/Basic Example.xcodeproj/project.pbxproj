@@ -50,6 +50,8 @@
 		28DDD42D16B31CAA00D5F36A /* color-wood@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DDD42B16B31CAA00D5F36A /* color-wood@2x.png */; };
 		28DDD43016B325DE00D5F36A /* color-carbon.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DDD42E16B325DE00D5F36A /* color-carbon.png */; };
 		28DDD43116B325DE00D5F36A /* color-carbon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DDD42F16B325DE00D5F36A /* color-carbon@2x.png */; };
+		28DDD43416B347A100D5F36A /* background-binding.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DDD43216B347A100D5F36A /* background-binding.png */; };
+		28DDD43516B347A100D5F36A /* background-binding@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DDD43316B347A100D5F36A /* background-binding@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +110,8 @@
 		28DDD42B16B31CAA00D5F36A /* color-wood@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-wood@2x.png"; sourceTree = "<group>"; };
 		28DDD42E16B325DE00D5F36A /* color-carbon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-carbon.png"; sourceTree = "<group>"; };
 		28DDD42F16B325DE00D5F36A /* color-carbon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-carbon@2x.png"; sourceTree = "<group>"; };
+		28DDD43216B347A100D5F36A /* background-binding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background-binding.png"; path = "../../../../../ios/GCCardCollectionViewController/Examples/Basic Example/Resources/background-binding.png"; sourceTree = "<group>"; };
+		28DDD43316B347A100D5F36A /* background-binding@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background-binding@2x.png"; path = "../../../../../ios/GCCardCollectionViewController/Examples/Basic Example/Resources/background-binding@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +192,8 @@
 		285E5FB216B0EE3A0080A81C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				28DDD43216B347A100D5F36A /* background-binding.png */,
+				28DDD43316B347A100D5F36A /* background-binding@2x.png */,
 				28DDD42316B3153000D5F36A /* background-section-header.png */,
 				28DDD42416B3153000D5F36A /* background-section-header@2x.png */,
 				2800759616B30FE100BD2533 /* color-badminton.png */,
@@ -339,6 +345,8 @@
 				28DDD42D16B31CAA00D5F36A /* color-wood@2x.png in Resources */,
 				28DDD43016B325DE00D5F36A /* color-carbon.png in Resources */,
 				28DDD43116B325DE00D5F36A /* color-carbon@2x.png in Resources */,
+				28DDD43416B347A100D5F36A /* background-binding.png in Resources */,
+				28DDD43516B347A100D5F36A /* background-binding@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

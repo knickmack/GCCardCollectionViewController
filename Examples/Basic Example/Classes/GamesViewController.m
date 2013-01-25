@@ -38,14 +38,14 @@
     
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
         view.backgroundColor = [UIColor clearColor];
-        view.layer.contents = (id)[UIImage imageNamed:@"background-section-header"].CGImage;
+        view.layer.contents = (__bridge id)[UIImage imageNamed:@"background-section-header"].CGImage;
         view.layer.contentsGravity = kCAGravityLeft;
         view.layer.contentsScale = [UIScreen mainScreen].scale;
     } else {
         UIView *sewnBindingView = [[UIView alloc] initWithFrame:CGRectMake(10.f, 0.f, 300.f, 30.f)];
         UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(10.f, 30.f, 300.f, 188.f) style:UITableViewStylePlain];
         
-        sewnBindingView.backgroundColor = [UIColor greenColor];
+        sewnBindingView.layer.contents = (__bridge id)[UIImage imageNamed:@"background-binding"].CGImage;
         
         [view addSubview:sewnBindingView];
         
