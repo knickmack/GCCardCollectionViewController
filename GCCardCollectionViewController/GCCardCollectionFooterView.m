@@ -10,4 +10,17 @@
 
 @implementation GCCardCollectionFooterView
 
+#pragma mark - UIView
+
+- (id)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (!self) {
+        return nil;
+    }
+    
+    self.backgroundColor = [UIColor purpleColor];
+    
+    return self;
+}
+
 @end

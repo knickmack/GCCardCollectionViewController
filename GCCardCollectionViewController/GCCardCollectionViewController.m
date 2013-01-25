@@ -7,8 +7,8 @@
 //
 
 #import "GCCardCollectionViewController.h"
-#import "GCCardCollectionViewPlainLayout.h"
-#import "GCCardCollectionViewSelectedLayout.h"
+#import "GCCardCollectionViewSelectedFlowLayout.h"
+#import "GCCardCollectionViewDetailFlowLayout.h"
 #import "GCCardCollectionHeaderView.h"
 #import "GCCardCollectionViewCell.h"
 #import "GCCardCollectionFooterView.h"
@@ -19,24 +19,34 @@ static NSString * const GCCardCollectionFooterViewIdentifier = @"Footer";
 
 @interface GCCardCollectionViewController ()
 
-@property (strong, nonatomic, readonly) GCCardCollectionViewPlainLayout *cardCollectionViewPlainLayout;
-@property (strong, nonatomic, readonly) GCCardCollectionViewSelectedLayout *cardCollectionViewSelectedFlowLayout;
+@property (strong, nonatomic, readonly) UICollectionViewFlowLayout *cardCollectionViewPlainFlowLayout;
+@property (strong, nonatomic, readonly) GCCardCollectionViewSelectedFlowLayout *cardCollectionViewSelectedFlowLayout;
+@property (strong, nonatomic, readonly) GCCardCollectionViewDetailFlowLayout *cardCollectionViewDetailFlowLayout;
 
 @end
 
 @implementation GCCardCollectionViewController
 
-@synthesize cardCollectionViewPlainLayout = _cardCollectionViewPlainLayout;
+@synthesize cardCollectionViewPlainFlowLayout = _cardCollectionViewPlainFlowLayout;
 @synthesize cardCollectionViewSelectedFlowLayout = _cardCollectionViewSelectedFlowLayout;
+@synthesize cardCollectionViewDetailFlowLayout = _cardCollectionViewDetailFlowLayout;
 
 #pragma mark - GCCardCollectionViewController
 
-- (GCCardCollectionViewSelectedLayout *)cardCollectionViewSelectedFlowLayout {
+- (GCCardCollectionViewSelectedFlowLayout *)cardCollectionViewSelectedFlowLayout {
     if (!_cardCollectionViewSelectedFlowLayout) {
-        _cardCollectionViewSelectedFlowLayout = [GCCardCollectionViewSelectedLayout new];
+        _cardCollectionViewSelectedFlowLayout = [GCCardCollectionViewSelectedFlowLayout new];
     }
     
     return _cardCollectionViewSelectedFlowLayout;
+}
+
+- (GCCardCollectionViewDetailFlowLayout *)cardCollectionViewDetailFlowLayout {
+    if (!_cardCollectionViewDetailFlowLayout) {
+        _cardCollectionViewDetailFlowLayout = [GCCardCollectionViewDetailFlowLayout new];
+    }
+    
+    return _cardCollectionViewDetailFlowLayout;
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -66,15 +76,29 @@ static NSString * const GCCardCollectionFooterViewIdentifier = @"Footer";
 #pragma mark - UICollectionViewDelegate
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    [self.collectionView setCollectionViewLayout:self.cardCollectionViewSelectedFlowLayout animated:YES];
+    [self.collectionView setCollectionViewLayout:self.cardCollectionViewDetailFlowLayout animated:YES];
+}
+
+#pragma mark - UIViewController
+
+- (void)didReceiveMemoryWarning {
+    _cardCollectionViewPlainFlowLayout = nil;
+    _cardCollectionViewSelectedFlowLayout = nil;
+    _cardCollectionViewDetailFlowLayout = nil;
+    
+    [super didReceiveMemoryWarning];
 }
 
 #pragma mark - NSObject
 
 - (id)init {
-    _cardCollectionViewPlainLayout = [GCCardCollectionViewPlainLayout new];
+    _cardCollectionViewPlainFlowLayout = [UICollectionViewFlowLayout new];
     
-    self = [super initWithCollectionViewLayout:_cardCollectionViewPlainLayout];
+    _cardCollectionViewPlainFlowLayout.headerReferenceSize = CGSizeMake(300.f, 30.f);
+    _cardCollectionViewPlainFlowLayout.itemSize = CGSizeMake(300.f, 46.f);
+    _cardCollectionViewPlainFlowLayout.sectionInset = UIEdgeInsetsMake(10.f, 10.f, 10.f, 10.f);
+    
+    self = [super initWithCollectionViewLayout:_cardCollectionViewPlainFlowLayout];
     if (!self) {
         return nil;
     }
