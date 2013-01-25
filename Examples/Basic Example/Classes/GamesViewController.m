@@ -11,7 +11,7 @@
 #import "GCCardCollectionHeaderView.h"
 #import "GCCardCollectionViewCell.h"
 
-@interface GamesViewController () <UITableViewDataSource>
+@interface GamesViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic, readonly) UIImageView *backgroundView;
 
@@ -42,12 +42,17 @@
         view.layer.contentsGravity = kCAGravityLeft;
         view.layer.contentsScale = [UIScreen mainScreen].scale;
     } else {
-        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+        UIView *sewnBindingView = [[UIView alloc] initWithFrame:CGRectMake(10.f, 0.f, 300.f, 30.f)];
+        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(10.f, 30.f, 300.f, 0.f) style:UITableViewStylePlain];
         
-        tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+        sewnBindingView.backgroundColor = [UIColor greenColor];
+        
+        [view addSubview:sewnBindingView];
+        
+        tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
         tableView.backgroundColor = [UIColor clearColor];
-        tableView.backgroundView = nil;
         tableView.dataSource = self;
+        tableView.delegate = self;
         
         [view addSubview:tableView];
     }
@@ -84,10 +89,15 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    cell.backgroundColor = [UIColor carbonColor];
     cell.textLabel.text = [NSString stringWithFormat:@"%i", indexPath.row];
     
     return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    cell.backgroundColor = [UIColor carbonColor];
 }
 
 #pragma mark - NSObject
