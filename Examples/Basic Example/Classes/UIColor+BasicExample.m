@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 GameCall Social Sports. All rights reserved.
 //
 
-#import "UIColor+Random.h"
+#import "UIColor+BasicExample.h"
 
-@implementation UIColor (Random)
+@implementation UIColor (BasicExample)
 
 + (UIColor *)randomColor {
     CGFloat hue = ( arc4random() % 256 / 256.0 );  //  0.0 to 1.0
@@ -31,6 +31,12 @@
     }
     
     return [textures objectAtIndex:arc4random_uniform(textures.count)];
+}
+
++ (UIColor *)woodColor {
+    UIImage *image = [UIImage imageNamed:@"color-wood"];
+    
+    return [UIColor colorWithPatternImage:image];
 }
 
 @end

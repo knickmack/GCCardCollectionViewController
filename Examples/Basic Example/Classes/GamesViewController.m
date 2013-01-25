@@ -7,11 +7,29 @@
 //
 
 #import "GamesViewController.h"
-#import "UIColor+Random.h"
+#import "UIColor+BasicExample.h"
 #import "GCCardCollectionHeaderView.h"
 #import "GCCardCollectionViewCell.h"
 
+@interface GamesViewController () <UITableViewDataSource>
+
+@property (strong, nonatomic, readonly) UIImageView *backgroundView;
+
+@end
+
 @implementation GamesViewController
+
+@synthesize backgroundView = _backgroundView;
+
+#pragma mark - GamesViewController
+
+- (UIImageView *)backgroundView {
+    if (!_backgroundView) {
+        _backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"color-wood"]];
+    }
+    
+    return _backgroundView;
+}
 
 #pragma mark - UICollectionViewDataSource
 
@@ -27,6 +45,10 @@
         UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
         
         tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+        tableView.backgroundColor = [UIColor clearColor];
+        tableView.backgroundView = nil;
+        tableView.dataSource = self;
+        
         [view addSubview:tableView];
     }
     
@@ -49,6 +71,24 @@
     return cell;
 }
 
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%i", indexPath.row];
+    
+    return cell;
+}
+
 #pragma mark - NSObject
 
 - (id)init {
@@ -57,8 +97,10 @@
         return nil;
     }
     
-    self.collectionView.backgroundColor = [UIColor whiteColor];
+    self.collectionView.backgroundColor = [UIColor clearColor];
     self.title = NSLocalizedString(@"Games", nil);
+    
+    [self.view insertSubview:self.backgroundView belowSubview:self.collectionView];
     
     return self;
 }

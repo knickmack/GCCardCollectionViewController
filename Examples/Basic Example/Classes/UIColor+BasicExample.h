@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIColor (Random)
+@interface UIColor (BasicExample)
 
 + (UIColor *)randomColor;
 + (UIColor *)randomTexture;
++ (UIColor *)woodColor;
 
 @end

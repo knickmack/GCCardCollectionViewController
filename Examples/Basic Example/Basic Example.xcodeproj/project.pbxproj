@@ -32,7 +32,7 @@
 		281B96F416B1B79900074631 /* GCCardCollectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 281B96F316B1B79900074631 /* GCCardCollectionFooterView.m */; };
 		281B96F816B1B96500074631 /* GamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281B96F716B1B96500074631 /* GamesViewController.m */; };
 		282D910816B292510017CAEE /* GCCardCollectionViewSelectedFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 282D910716B292510017CAEE /* GCCardCollectionViewSelectedFlowLayout.m */; };
-		2843F8EE16B2175400C6CF7B /* UIColor+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 2843F8ED16B2175400C6CF7B /* UIColor+Random.m */; };
+		2843F8EE16B2175400C6CF7B /* UIColor+BasicExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 2843F8ED16B2175400C6CF7B /* UIColor+BasicExample.m */; };
 		285E5F8B16B0EDF40080A81C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285E5F8A16B0EDF40080A81C /* UIKit.framework */; };
 		285E5F8D16B0EDF40080A81C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285E5F8C16B0EDF40080A81C /* Foundation.framework */; };
 		285E5F8F16B0EDF40080A81C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285E5F8E16B0EDF40080A81C /* CoreGraphics.framework */; };
@@ -46,6 +46,8 @@
 		28DDD42516B3153000D5F36A /* background-section-header.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DDD42316B3153000D5F36A /* background-section-header.png */; };
 		28DDD42616B3153000D5F36A /* background-section-header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DDD42416B3153000D5F36A /* background-section-header@2x.png */; };
 		28DDD42916B3173A00D5F36A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DDD42816B3173A00D5F36A /* QuartzCore.framework */; };
+		28DDD42C16B31CAA00D5F36A /* color-wood.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DDD42A16B31CAA00D5F36A /* color-wood.png */; };
+		28DDD42D16B31CAA00D5F36A /* color-wood@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DDD42B16B31CAA00D5F36A /* color-wood@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,8 +81,8 @@
 		281B96F716B1B96500074631 /* GamesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GamesViewController.m; path = Classes/GamesViewController.m; sourceTree = "<group>"; };
 		282D910616B292510017CAEE /* GCCardCollectionViewSelectedFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCCardCollectionViewSelectedFlowLayout.h; sourceTree = "<group>"; };
 		282D910716B292510017CAEE /* GCCardCollectionViewSelectedFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCCardCollectionViewSelectedFlowLayout.m; sourceTree = "<group>"; };
-		2843F8EC16B2175400C6CF7B /* UIColor+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Random.h"; path = "Classes/UIColor+Random.h"; sourceTree = "<group>"; };
-		2843F8ED16B2175400C6CF7B /* UIColor+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Random.m"; path = "Classes/UIColor+Random.m"; sourceTree = "<group>"; };
+		2843F8EC16B2175400C6CF7B /* UIColor+BasicExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+BasicExample.h"; path = "Classes/UIColor+BasicExample.h"; sourceTree = "<group>"; };
+		2843F8ED16B2175400C6CF7B /* UIColor+BasicExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+BasicExample.m"; path = "Classes/UIColor+BasicExample.m"; sourceTree = "<group>"; };
 		285E5F8616B0EDF40080A81C /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		285E5F8A16B0EDF40080A81C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		285E5F8C16B0EDF40080A81C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,6 +102,8 @@
 		28DDD42316B3153000D5F36A /* background-section-header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-section-header.png"; sourceTree = "<group>"; };
 		28DDD42416B3153000D5F36A /* background-section-header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-section-header@2x.png"; sourceTree = "<group>"; };
 		28DDD42816B3173A00D5F36A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		28DDD42A16B31CAA00D5F36A /* color-wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-wood.png"; sourceTree = "<group>"; };
+		28DDD42B16B31CAA00D5F36A /* color-wood@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color-wood@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,8 +133,8 @@
 		2843F8EB16B2173F00C6CF7B /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				2843F8EC16B2175400C6CF7B /* UIColor+Random.h */,
-				2843F8ED16B2175400C6CF7B /* UIColor+Random.m */,
+				2843F8EC16B2175400C6CF7B /* UIColor+BasicExample.h */,
+				2843F8ED16B2175400C6CF7B /* UIColor+BasicExample.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -200,6 +204,8 @@
 				280075A516B30FE100BD2533 /* color-soccer@2x.png */,
 				280075A616B30FE100BD2533 /* color-tennis.png */,
 				280075A716B30FE100BD2533 /* color-tennis@2x.png */,
+				28DDD42A16B31CAA00D5F36A /* color-wood.png */,
+				28DDD42B16B31CAA00D5F36A /* color-wood@2x.png */,
 				280075A816B30FE100BD2533 /* color-yoga.png */,
 				280075A916B30FE100BD2533 /* color-yoga@2x.png */,
 				285E5FB316B0EE3A0080A81C /* Default-568h@2x.png */,
@@ -323,6 +329,8 @@
 				280075BD16B30FE100BD2533 /* color-yoga@2x.png in Resources */,
 				28DDD42516B3153000D5F36A /* background-section-header.png in Resources */,
 				28DDD42616B3153000D5F36A /* background-section-header@2x.png in Resources */,
+				28DDD42C16B31CAA00D5F36A /* color-wood.png in Resources */,
+				28DDD42D16B31CAA00D5F36A /* color-wood@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +348,7 @@
 				281B96F116B1B78600074631 /* GCCardCollectionHeaderView.m in Sources */,
 				281B96F416B1B79900074631 /* GCCardCollectionFooterView.m in Sources */,
 				281B96F816B1B96500074631 /* GamesViewController.m in Sources */,
-				2843F8EE16B2175400C6CF7B /* UIColor+Random.m in Sources */,
+				2843F8EE16B2175400C6CF7B /* UIColor+BasicExample.m in Sources */,
 				282D910816B292510017CAEE /* GCCardCollectionViewSelectedFlowLayout.m in Sources */,
 				2877DDF016B2D0B50063C0DF /* GCCardCollectionViewDetailFlowLayout.m in Sources */,
 			);

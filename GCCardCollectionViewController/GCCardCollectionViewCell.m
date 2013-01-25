@@ -7,21 +7,7 @@
 //
 
 #import "GCCardCollectionViewCell.h"
-#import "UIColor+Random.h"
 
 @implementation GCCardCollectionViewCell
-
-#pragma mark - UIView
-
-- (id)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (!self) {
-        return nil;
-    }
-    
-    self.backgroundColor = [UIColor randomColor];
-    
-    return self;
-}
 
 @end
