@@ -7,6 +7,8 @@
 //
 
 #import "GamesViewController.h"
+#import "UIColor+Random.h"
+#import "GCCardCollectionViewCell.h"
 
 @implementation GamesViewController
 
@@ -18,6 +20,14 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return section + 1;
+}
+
+- (GCCardCollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    GCCardCollectionViewCell *cell = (GCCardCollectionViewCell *)[super collectionView:collectionView cellForItemAtIndexPath:indexPath];
+    
+    cell.backgroundColor = [UIColor randomTexture];
+    
+    return cell;
 }
 
 #pragma mark - NSObject
