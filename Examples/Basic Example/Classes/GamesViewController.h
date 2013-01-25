@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 GameCall Social Sports. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
 #import "GCCardCollectionViewController.h"
 
 @interface GamesViewController : GCCardCollectionViewController

@@ -8,11 +8,25 @@
 
 #import "GamesViewController.h"
 #import "UIColor+Random.h"
+#import "GCCardCollectionHeaderView.h"
 #import "GCCardCollectionViewCell.h"
 
 @implementation GamesViewController
 
 #pragma mark - UICollectionViewDataSource
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    UICollectionReusableView *view = [super collectionView:collectionView viewForSupplementaryElementOfKind:kind atIndexPath:indexPath];
+    
+    if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
+        view.backgroundColor = [UIColor clearColor];
+        view.layer.contents = (id)[UIImage imageNamed:@"background-section-header"].CGImage;
+        view.layer.contentsGravity = kCAGravityLeft;
+        view.layer.contentsScale = [UIScreen mainScreen].scale;
+    }
+    
+    return view;
+}
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 4;
