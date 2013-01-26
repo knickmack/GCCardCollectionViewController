@@ -43,7 +43,7 @@
         view.layer.contentsScale = [UIScreen mainScreen].scale;
     } else {
         UIView *sewnBindingView = [[UIView alloc] initWithFrame:CGRectMake(10.f, 0.f, 300.f, 30.f)];
-        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(10.f, 30.f, 300.f, 188.f) style:UITableViewStylePlain];
+        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(10.f, 30.f, 300.f, 178.f) style:UITableViewStylePlain];
         
         sewnBindingView.layer.contents = (__bridge id)[UIImage imageNamed:@"background-binding"].CGImage;
         
