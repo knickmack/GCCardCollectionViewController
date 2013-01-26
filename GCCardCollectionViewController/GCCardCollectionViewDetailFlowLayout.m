@@ -21,10 +21,10 @@
     CGRect frame = attributes.frame;
     
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
-        frame.origin = CGPointZero;
+        frame.origin = CGPointMake(0.f, 10.f);
         attributes.frame = frame;
     } else {
-        frame.origin = CGPointMake(0.f, 286.f);
+        frame.origin = CGPointMake(0.f, 296.f);
         attributes.frame = frame;
     }
     
@@ -35,7 +35,7 @@
     UICollectionViewLayoutAttributes *attributes = [super layoutAttributesForItemAtIndexPath:indexPath];
     CGRect frame = attributes.frame;
     
-    frame.origin = CGPointMake(self.sectionInset.left, self.headerReferenceSize.height + self.minimumLineSpacing);
+    frame.origin = CGPointMake(self.sectionInset.left, self.sectionInset.top + self.headerReferenceSize.height + self.minimumLineSpacing);
     attributes.frame = frame;
     
     return attributes;
@@ -49,13 +49,13 @@
         
         if (attribute.representedElementCategory == UICollectionElementCategorySupplementaryView) {
             if ([attribute.representedElementKind isEqualToString:UICollectionElementKindSectionHeader]) {
-                frame.origin = CGPointZero;
+                frame.origin = CGPointMake(0.f, 10.f);
             } else {
-                frame.origin = CGPointMake(0.f, 286.f);
+                frame.origin = CGPointMake(0.f, 296.f);
                 attribute.frame = frame;
             }
         } else {
-            frame.origin = CGPointMake(self.sectionInset.left, self.headerReferenceSize.height + self.minimumLineSpacing);
+            frame.origin = CGPointMake(self.sectionInset.left, self.sectionInset.top + self.headerReferenceSize.height + self.minimumLineSpacing);
         }
         
         attribute.frame = frame;
@@ -72,7 +72,7 @@
         return nil;
     }
     
-    self.footerReferenceSize = CGSizeMake(300.f, 218.f);
+    self.footerReferenceSize = CGSizeMake(300.f, 208.f);
     self.headerReferenceSize = CGSizeMake(300.f, 30.f);
     self.itemSize = CGSizeMake(300.f, 236.f);
     self.sectionInset = UIEdgeInsetsMake(10.f, 10.f, 10.f, 10.f);
