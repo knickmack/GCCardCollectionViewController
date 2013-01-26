@@ -49,9 +49,10 @@
         
         [view addSubview:sewnBindingView];
         
-        tableView.backgroundColor = [UIColor clearColor];
+        tableView.backgroundColor = [UIColor carbonColor];
         tableView.dataSource = self;
         tableView.delegate = self;
+        tableView.showsVerticalScrollIndicator = NO;
         
         [view addSubview:tableView];
     }
