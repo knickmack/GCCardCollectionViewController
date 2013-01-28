@@ -9,7 +9,7 @@
 #import "GamesViewController.h"
 #import "UIColor+BasicExample.h"
 #import "GCCardCollectionHeaderView.h"
-#import "GCCardCollectionViewCell.h"
+#import "GamesCollectionViewCell.h"
 
 @interface GamesViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -68,8 +68,8 @@
     return section + 1;
 }
 
-- (GCCardCollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    GCCardCollectionViewCell *cell = (GCCardCollectionViewCell *)[super collectionView:collectionView cellForItemAtIndexPath:indexPath];
+- (GamesCollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    GamesCollectionViewCell *cell = (GamesCollectionViewCell *)[super collectionView:collectionView cellForItemAtIndexPath:indexPath];
     
     cell.backgroundColor = [UIColor randomTexture];
     
