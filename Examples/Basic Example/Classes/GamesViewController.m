@@ -11,6 +11,8 @@
 #import "GCCardCollectionHeaderView.h"
 #import "GamesCollectionViewCell.h"
 
+static NSString * const GamesCollectionViewCellIdentifier = @"Cell";
+
 @interface GamesViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic, readonly) UIImageView *backgroundView;
@@ -111,6 +113,7 @@
     self.collectionView.backgroundColor = [UIColor clearColor];
     self.title = NSLocalizedString(@"Games", nil);
     
+    [self.collectionView registerClass:[GamesCollectionViewCell class] forCellWithReuseIdentifier:GamesCollectionViewCellIdentifier];
     [self.view insertSubview:self.backgroundView belowSubview:self.collectionView];
     
     return self;

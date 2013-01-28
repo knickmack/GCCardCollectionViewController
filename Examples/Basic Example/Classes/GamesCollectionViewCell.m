@@ -10,22 +10,18 @@
 
 @implementation GamesCollectionViewCell
 
-- (id)initWithFrame:(CGRect)frame
-{
+#pragma mark - UIView
+
+- (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
+    if (!self) {
+        return nil;
     }
+    
+    self.layer.cornerRadius = 5.f;
+    self.layer.masksToBounds = YES;
+    
     return self;
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 @end
