@@ -21,8 +21,11 @@
     CGRect frame = attributes.frame;
     
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
+        UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:indexPath];
+        
         frame.origin = CGPointMake(0.f, 10.f);
         attributes.frame = frame;
+        attributes.zIndex = cell.selected;
     } else {
         frame.origin = CGPointMake(0.f, 296.f);
         attributes.frame = frame;
@@ -37,6 +40,7 @@
     
     frame.origin = CGPointMake(self.sectionInset.left, self.sectionInset.top + self.headerReferenceSize.height + self.minimumLineSpacing);
     attributes.frame = frame;
+    attributes.zIndex = [self.collectionView.indexPathsForSelectedItems containsObject:indexPath];
     
     return attributes;
 }
