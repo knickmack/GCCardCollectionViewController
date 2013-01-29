@@ -43,6 +43,12 @@ static NSString * const GamesCollectionViewCellIdentifier = @"Cell";
         view.layer.contents = (__bridge id)[UIImage imageNamed:@"background-section-header"].CGImage;
         view.layer.contentsGravity = kCAGravityLeft;
         view.layer.contentsScale = [UIScreen mainScreen].scale;
+        view.layer.rasterizationScale = [UIScreen mainScreen].scale;
+        view.layer.shadowColor = [UIColor blackColor].CGColor;
+        view.layer.shadowOffset = CGSizeMake(0.f, 2.f);
+        view.layer.shadowOpacity = 0.6f;
+        view.layer.shadowRadius = 1.f;
+        view.layer.shouldRasterize = YES;
     } else {
         UIView *sewnBindingView = [[UIView alloc] initWithFrame:CGRectMake(10.f, 0.f, 300.f, 30.f)];
         UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(10.f, 30.f, 300.f, 178.f) style:UITableViewStylePlain];
@@ -72,8 +78,6 @@ static NSString * const GamesCollectionViewCellIdentifier = @"Cell";
 
 - (GamesCollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     GamesCollectionViewCell *cell = (GamesCollectionViewCell *)[super collectionView:collectionView cellForItemAtIndexPath:indexPath];
-    
-    cell.backgroundColor = [UIColor randomTexture];
     
     return cell;
 }

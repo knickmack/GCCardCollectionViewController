@@ -7,6 +7,7 @@
 //
 
 #import "GamesCollectionViewCell.h"
+#import "UIColor+BasicExample.h"
 
 @implementation GamesCollectionViewCell
 
@@ -18,8 +19,14 @@
         return nil;
     }
     
+    self.backgroundColor = [UIColor randomTexture];
     self.layer.cornerRadius = 5.f;
-    self.layer.masksToBounds = YES;
+    self.layer.rasterizationScale = [UIScreen mainScreen].scale;
+    self.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.layer.shadowOffset = CGSizeMake(0.f, 2.f);
+    self.layer.shadowOpacity = 0.6f;
+    self.layer.shadowRadius = 1.f;
+    self.layer.shouldRasterize = YES;
     
     return self;
 }
